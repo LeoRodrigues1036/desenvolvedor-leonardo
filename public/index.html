@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvedor Web - LEONARDO RODRIGUES</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        body{
+            background: linear-gradient(to bottom right, #3498db, #ffffff);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        body,header,main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header{
+            margin: 10px;
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+        
+        header img {
+            width: 170px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        header h1{
+            margin: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            color: white;
+            
+        }
+
+        header h2{
+            margin: 5px;
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            color: rgb(223, 232, 241);
+        }
+
+        main{
+            width: 320px;
+        }
+
+        main nav{
+            width: 90%;
+            margin: 5px;
+        }
+
+        main button{
+            margin: 8px;
+            width: 95%;
+            height: 42px;
+            font-size: 14px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 600;
+            border-radius: 10px;
+            background-color: transparent;
+            border: 1px solid black;
+        }
+
+        main li{
+            width: 100%;
+        }
+
+        main ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        main section{
+            margin: 5px;
+            padding: 10px;
+        }
+
+        main section ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            width: 180px;
+            margin: 5px;
+        }
+        main section li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 5px;
+            height: 0;
+        }
+
+        main a {
+            margin: 5px;
+        }
+
+        #logo-instagram, #logo-github, #logo-linkedin{
+            font-size: 28px;
+            color: black;
+        }
+
+        button:hover{
+            font-size: 16px;
+            color: #ffffff;
+            border: 1px solid white;
+        }
+
+        #logo-linkedin:hover{
+            color: white;
+            font-size: 38px;
+        }
+
+        #logo-github:hover{
+            color: white;
+            font-size: 38px;
+        }
+
+        #logo-instagram:hover{
+            color: white;
+            font-size: 38px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/14624805_582200288631679_2632592348588015616_n.jpg" alt="">
+        <h1>Leonardo Rodrigues</h1>
+        <h2>Desenvolvedor Full Stack</h2>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><button type="button" onclick=" Sobre()">Sobre</button></li>
+                <li><button type="button" onclick=" Portfolio()">Portfólio</button></li>
+                <li><button type="button" onclick=" Contato()">Contato</button></li>
+            </ul>
+        </nav>
+
+        <section>
+            <ul>
+                <li><a href="https://github.com/LeoRodrigues1036"><ion-icon id="logo-github" name="logo-github"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/leonardo-rodrigues-desenvolvedor-web/"><ion-icon id="logo-linkedin" name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/le0dev/"><ion-icon id="logo-instagram" name="logo-instagram"></ion-icon></a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script>
+
+        function Sobre(){
+        window.location.href = "/sobre"
+        }
+
+        function Portfolio(){
+            window.location.href = "/portfolio"
+        }
+
+        function Contato(){
+            window.location.href = "/contato"
+        }
+
+    </script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
