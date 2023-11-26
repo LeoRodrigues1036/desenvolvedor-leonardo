@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desenvolvedor Web - LEONARDO RODRIGUES</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
-        *{
+        * {
             margin: 0;
             padding: 0;
-            
+
         }
 
-        body{
-            background: linear-gradient(to bottom right,  #ffffff, #3498db);
+        body {
+            background: linear-gradient(to bottom right, #ffffff, #3498db);
             background-size: 100% 100%;
             background-repeat: no-repeat;
-            height: 100vh;
+            height: auto;
         }
 
-        body,header,main{
+        body,
+        header,
+        main {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        
-        header{
+
+        header {
             margin: 10px;
             padding: 10px;
             margin-bottom: 40px;
         }
-        
+
         header img {
             width: 170px;
             border-radius: 50%;
@@ -42,33 +44,33 @@
             border: 2px solid black;
         }
 
-        header h1{
+        header h1 {
             margin: 5px;
             font-family: 'Montserrat', sans-serif;
             font-size: 28px;
             color: white;
-            text-shadow:  1px 1px 2px black;
-            
+            text-shadow: 1px 1px 2px black;
+
         }
 
-        header h2{
+        header h2 {
             margin: 5px;
             font-family: 'Lato', sans-serif;
             font-size: 16px;
-            color:white;
-            text-shadow:  1px 1px 2px black;
+            color: white;
+            text-shadow: 1px 1px 2px black;
         }
 
-        main{
+        main {
             width: 320px;
         }
 
-        main nav{
+        main nav {
             width: 90%;
             margin: 5px;
         }
 
-        main button{
+        main button {
             margin: 8px;
             width: 95%;
             height: 42px;
@@ -78,25 +80,25 @@
             border-radius: 10px;
             background-color: transparent;
             border: 1px solid black;
-            color:black;
+            color: black;
         }
 
-        main li{
+        main li {
             width: 100%;
         }
 
-        main ul{
+        main ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
 
-        main section{
+        main section {
             margin: 5px;
             padding: 10px;
         }
 
-        main section ul{
+        main section ul {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -105,7 +107,8 @@
             width: 180px;
             margin: 5px;
         }
-        main section li{
+
+        main section li {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -117,54 +120,68 @@
             margin: 5px;
         }
 
-        #logo-instagram, #logo-github, #logo-linkedin{
+        #logo-instagram,
+        #logo-github,
+        #logo-linkedin {
             font-size: 28px;
             color: black;
         }
 
-        button:hover{
+        button:hover {
             font-size: 16px;
             color: #ffffff;
             border: 1px solid white;
         }
 
-        #logo-linkedin:hover{
+        #logo-linkedin:hover {
             color: white;
             font-size: 38px;
         }
 
-        #logo-github:hover{
+        #logo-github:hover {
             color: white;
             font-size: 38px;
         }
 
-        #logo-instagram:hover{
+        #logo-instagram:hover {
             color: white;
             font-size: 38px;
         }
 
-        footer{
+        footer {
             margin-bottom: 5px;
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: end;
-            align-items:center;
+            align-items: center;
             font-size: 10px;
             color: #ffffff;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
         }
 
-        @media only screen and (min-width: 540px){
+        @media only screen and (min-width: 400px) {
 
-            footer{
+            body {
+                height: 930px;
+            }
+
+            footer {
                 margin-top: 130px;
             }
         }
 
+        @media only screen and (min-width: 990px) {
+
+            body {
+                height: 100vh;
+            }
+
+        }
     </style>
 </head>
+
 <body>
     <header>
         <img src="img/14624805_582200288631679_2632592348588015616_n.jpg" alt="">
@@ -183,9 +200,12 @@
 
         <section>
             <ul>
-                <li><a href="https://github.com/LeoRodrigues1036"><ion-icon id="logo-github" name="logo-github"></ion-icon></a></li>
-                <li><a href="https://www.linkedin.com/in/leonardo-rodrigues-desenvolvedor-web/"><ion-icon id="logo-linkedin" name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://www.instagram.com/le0dev/"><ion-icon id="logo-instagram" name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://github.com/LeoRodrigues1036"><ion-icon id="logo-github"
+                            name="logo-github"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/leonardo-rodrigues-desenvolvedor-web/"><ion-icon
+                            id="logo-linkedin" name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/le0dev/"><ion-icon id="logo-instagram"
+                            name="logo-instagram"></ion-icon></a></li>
             </ul>
         </section>
 
@@ -198,21 +218,22 @@
 
     <script>
 
-        function Sobre(){
-        window.location.href = "/sobre"
+        function Sobre() {
+            window.location.href = "/sobre"
         }
 
-        function Portfolio(){
+        function Portfolio() {
             window.location.href = "/portfolio"
         }
 
-        function Contato(){
+        function Contato() {
             window.location.href = "/contato"
         }
 
     </script>
-    
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
