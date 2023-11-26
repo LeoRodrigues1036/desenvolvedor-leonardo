@@ -7,63 +7,287 @@
     <title>Sobre - LEONARDO RODRIGUES</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-        *{
+
+        * {
             margin: 0;
             padding: 0;
             font-family: 'Montserrat', sans-serif;
-            
+
         }
 
-        body{
-            background: linear-gradient(to bottom right, #3498db, #ffffff);
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
+        body {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            width: 100%;
+            background: linear-gradient(to bottom right, #ffffff, #3498db);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
         }
 
-        header{
-            margin-top: 20px;
-            width: 90%;
+        header {
+
+            width: 350px;
+            margin: 10px 0px;
+            margin-top: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgba(66, 63, 241, 0.432);
         }
 
-        header img{
-
+        header img {
+            width: 100px;
             border-radius: 100%;
-            width: 40%;
-            margin:  50px;
-            border: 5px solid white;
-        }
-        main{
-            width: 90%;
-            background-color: rgba(66, 63, 241, 0.432);
-            margin-bottom: 20px;
+            margin: 15px;
         }
 
-        h1{
-            width: 100%;
-            margin:  10px 0px; 
-            color: #ffffff;
+        main {
+
+            width: 350px;
+            margin: 10px 0px;
+        }
+        button{
+            position: fixed;
+            top: 0;
+            right: 0;
+            margin: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
         }
 
-        h2{
-            padding: 0 10px;
-            color: #ffffff;
+        #logo-html5 {
+
+            font-size: 55px;
+            color: #EC572D;
+
         }
 
-        p{
-            color: #ffffff;
-            width: auto;
-            margin:  10px 0px;
-            padding:  0 30px;
+        #logo-css3 {
+
+            font-size: 45px;
+            margin-bottom: -30px;
+            color: #32ACE0;
+        }
+
+        #logo-javascript {
+
+            font-size: 35px;
+            color: #D6BC3D;
+        }
+
+        #logo-react {
+
+            font-size: 25px;
+            color: #68DBFB;
+        }
+
+        #logo-wordpress {
+
+            font-size: 20px;
+            margin: -20px;
+            color: #2A799D;
+        }
+
+        @keyframes floating {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        #logo-html5 {
+
+            animation: floating 5s infinite;
+        }
+
+        #logo-css3 {
+
+            animation: floating 8s infinite;
+        }
+
+        #logo-javascript {
+
+            animation: floating 11s infinite;
+        }
+
+        #logo-react {
+
+            animation: floating 13s infinite;
+        }
+
+        #logo-wordpress {
+
+            animation: floating 15s infinite;
+        }
+
+        .box {
+            background-color: white;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 10px;
+            max-height: auto;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+
+        }
+
+        h2 {
+            font-size: 18px;
             font-weight: 600;
-            text-align: justify;
+            margin-bottom: 10px;
+
+        }
+
+        p {
+            font-size: 14px;
+            padding-left: 20px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        a {
+            text-decoration: none;
+            color: royalblue;
+            font-weight: 900;
+        }
+
+        footer{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items:center;
+            margin-top: 40px;
+            margin-bottom: 10px;
+
+        }
+
+        footer p {
+            color: #ffffff;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        @media only screen and (min-width: 540px) {
+            /* Estilos específicos para tablet */
+            body {
+                height: auto;
+            }
+
+            header {
+                width: 80%;
+            }
+
+            main {
+                width: 80%;
+            }
+
+            header img {
+                width: 200px;
+            }
+
+            #logo-html5 {
+
+                font-size: 75px;
+                margin-top: -60px;
+
+            }
+
+            #logo-css3 {
+
+                font-size: 65px;
+                margin-bottom: -100px;
+
+            }
+
+            #logo-javascript {
+
+                font-size: 55px;
+                margin-top: -100px;
+            }
+
+            #logo-react {
+                margin-bottom: -50px;
+                font-size: 45px;
+            }
+
+            #logo-wordpress {
+                margin-left: 50px;
+                font-size: 40px;
+            }
+        }
+
+        @media only screen and (min-width: 950px) {
+
+            /* Estilos específicos para desktop */
+
+            body {
+                height: auto;
+            }
+
+            header {
+               
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            main {
+                margin-top: 40px;
+                
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            header img {
+                width: 300px;
+            }
+
+            #logo-html5 {
+
+                font-size: 100px;
+                margin-top: -60px;
+                padding: 20px;
+
+            }
+
+            #logo-css3 {
+
+                font-size: 65px;
+                margin-bottom: -100px;
+
+            }
+
+            #logo-javascript {
+
+                font-size: 75px;
+                margin-top: -100px;
+            }
+
+            #logo-react {
+                margin-bottom: -50px;
+                font-size: 65px;
+                padding: 15px;
+            }
+
+            #logo-wordpress {
+                margin-left: 85px;
+                font-size: 80px;
+            }
         }
     </style>
 </head>
@@ -73,34 +297,62 @@
 
 
     <header>
+        <div class="icon">
+            <ion-icon id="logo-html5" name="logo-html5"></ion-icon>
+            <ion-icon id="logo-css3" name="logo-css3"></ion-icon>
+            <ion-icon id="logo-javascript" name="logo-javascript"></ion-icon>
+            <ion-icon id="logo-react" name="logo-react"></ion-icon>
+            <ion-icon id="logo-wordpress" name="logo-wordpress"></ion-icon>
+
+        </div>
         <img src="img/14624805_582200288631679_2632592348588015616_n.jpg" alt="">
     </header>
 
     <main>
 
-        <h1>Quem Sou</h1>
-        <p>Olá! Meu nome é Leonardo Rodrigues, tenho 27 anos e sou apaixonado pelo mudo da programação. Atualmente,
-            estou cursando Licenciatura em Computação no IFSertaoPE, onde tenho a oportunidade de aprimorar meus
-            conhecimentos e explorar novas perspectivas na área da tecnologia.</p>
-        <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor entusiasta, sempre em busca de desafios que me permitam aprender e crescer
-            profissionalmente. Com uma base sólida em programção, estou constantemente aprimorando minhas
-            habilidades para oferecer soluções inovadoras e eficientes.</p>
-        <h2>Experiência</h2>
-        <p>Ao longo da minha jornada, tive a oportunidade de trabalhar em diversos projetos desafiadores, nos quais
-            pude aplicar meus conhecimentos em linguagens como HTML, CSS, JavaScript, e frameworks como React e
-            Node.js. Minha abordagem é focada na criação de experiências digitais intuitivas e atraentes.</p>
-        <h2>Educação</h2>
-        <p>Atualmente, estou mergulhado nos estudos de Computação no IFSertaoPE, onde tenho acesso a
-            uma sólida base acadêmica que complementa minha experiência prática no desenvolvimento web.</p>
-        <h2>Objetivo</h2>
-        <p>Busco oportunidades que me permitam continuar explorando e aprimorando minhas habilidades como
-            desenvolvedor FullStack. Estou comprometido em contribuir para projetos inovadores e desafiadores, enquanto
-            continuo a aprender e evoluir no sempre dinâmico campo da tecnologia.</p>
-
+        <div class="box">
+            <h1>Quem Sou</h1>
+            <p>Olá! Meu nome é Leonardo, tenho 27 anos e sou apaixonado pelo mudo da programação. Atualmente,
+                estou cursando Licenciatura em Computação no IFSertaoPE, onde tenho a oportunidade de aprimorar meus
+                conhecimentos e explorar novas perspectivas na área da tecnologia.</p>
+        </div>
+        <div class="box">
+            <h2>Sobre Mim</h2>
+            <p>Sou um desenvolvedor entusiasta, sempre em busca de desafios que me permitam aprender e crescer
+                profissionalmente. Com uma base sólida em programção, estou constantemente aprimorando minhas
+                habilidades para oferecer soluções inovadoras e eficientes.</p>
+        </div>
+        <div class="box">
+            <h2>Experiência</h2>
+            <p>Ao longo da minha jornada, tive a oportunidade de trabalhar em diversos projetos desafiadores, nos quais
+                pude aplicar meus conhecimentos em linguagens como HTML, CSS, JavaScript, e frameworks como React e
+                Node.js. Minha abordagem é focada na criação de experiências digitais intuitivas e atraentes.</p>
+        </div>
+        <div class="box">
+            <h2>Educação</h2>
+            <p>Atualmente, estou cursando Computação no <a href="https://www.ifsertao-pe.edu.br/">IFSertaoPE</a>, onde
+                tenho acesso a
+                uma sólida base acadêmica que complementa minha experiência prática no desenvolvimento web.</p>
+        </div>
+        <div class="box">
+            <h2>Objetivo</h2>
+            <p>Busco oportunidades que me permitam continuar explorando e aprimorando minhas habilidades como
+                desenvolvedor FullStack. Estou comprometido em contribuir para projetos inovadores e desafiadores,
+                enquanto
+                continuo a aprender e evoluir no sempre dinâmico campo da tecnologia.</p>
+        </div>
 
     </main>
 
+    <footer>
+        <p>Desenvolvido por LEONARDO RODRIGUES</p>
+        <p>Todos os direitos reservados - 2023</p>
+    </footer>
+
+    <button>Voltar</button>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
 </body>
