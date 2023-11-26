@@ -10,10 +10,39 @@
             background-size: 100% 100%;
             background-repeat: no-repeat;
             height: 100vb;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            position: fixed;
+            top: 0;
+            right: 0;
+            margin: 10px;
+            background-color:black;
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
     <h1>Contato</h1>
+    <ion-icon id='logo-ferramentas' name="construct-outline"></ion-icon>
+    <p>Em Desenvolvimento...</p>
+    <button id="voltar">Voltar</button>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        // Adiciona um evento de clique ao botão
+        document.getElementById('voltar').addEventListener('click', function() {
+          // Adicione aqui o código que você deseja executar quando o botão for clicado
+          window.location.href = "/"
+        });
+    </script>
 </body>
 </html>
