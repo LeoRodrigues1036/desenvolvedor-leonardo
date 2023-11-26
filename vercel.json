@@ -2,26 +2,14 @@
     "version":2,
     "builds":[
         {
-            "src":".dist/serve.js",
-            "use":"@now/node"
+            "src":"/serve.js",
+            "use":"@vercel/node"
         }
     ],
     "routas": [
       {
-        "url": "/",
-        "arquivo": "index.html"
-      },
-      {
-        "url": "/sobre",
-        "arquivo": "sobre.html"
-      },
-      {
-        "url": "/portfolio",
-        "arquivo": "portfolio.html"
-      },
-      {
-        "url": "/contato",
-        "arquivo": "contato.html"
+        "src": "(.*)",
+        "dest": "serve.js"
       }
     ]
   }
