@@ -14,6 +14,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
         button{
@@ -27,6 +28,28 @@
             padding: 5px;
             border-radius: 10px;
         }
+
+        #logo-ferramentas {
+            font-size: 50px;
+        }
+
+        @keyframes floating {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        #logo-ferramentas {
+
+            animation: floating 3s infinite;
+        }
+        
     </style>
 </head>
 <body>

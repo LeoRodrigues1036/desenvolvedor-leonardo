@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <style>
-        body{
+        body {
             background: linear-gradient(to bottom right, #3498db, #ffffff);
             background-size: 100% 100%;
             background-repeat: no-repeat;
@@ -14,21 +15,44 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
-        button{
+        button {
             position: fixed;
             top: 0;
             right: 0;
             margin: 10px;
-            background-color:black;
+            background-color: black;
             color: white;
             border: none;
             padding: 5px;
             border-radius: 10px;
         }
+
+        #logo-ferramentas {
+            font-size: 50px;
+        }
+
+        @keyframes floating {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        #logo-ferramentas {
+
+            animation: floating 3s infinite;
+        }
     </style>
 </head>
+
 <body>
     <h1>Portfólio</h1>
     <ion-icon id='logo-ferramentas' name="construct-outline"></ion-icon>
@@ -37,14 +61,15 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-   
+
 
     <script>
         // Adiciona um evento de clique ao botão
-        document.getElementById('voltar').addEventListener('click', function() {
-          // Adicione aqui o código que você deseja executar quando o botão for clicado
-          window.location.href = "/"
+        document.getElementById('voltar').addEventListener('click', function () {
+            // Adicione aqui o código que você deseja executar quando o botão for clicado
+            window.location.href = "/"
         });
     </script>
 </body>
+
 </html>
