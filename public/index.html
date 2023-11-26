@@ -19,10 +19,13 @@
             background: linear-gradient(to bottom right, #ffffff, #3498db);
             background-size: 100% 100%;
             background-repeat: no-repeat;
-            height: 913px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100%;
         }
 
-        body,
         header,
         main {
             display: flex;
@@ -41,7 +44,6 @@
             width: 170px;
             border-radius: 50%;
             margin: 10px;
-            border: 2px solid black;
         }
 
         header h1 {
@@ -149,8 +151,8 @@
         }
 
         footer {
-            margin-bottom: 5px;
-            width: 100%;
+            margin: 220px 0px 10px 0px;
+            padding: 10px;
             display: flex;
             flex-direction: column;
             justify-content: end;
