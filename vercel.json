@@ -1,0 +1,20 @@
+{
+    "routas": [
+      {
+        "url": "/",
+        "arquivo": "index.html"
+      },
+      {
+        "url": "/sobre",
+        "arquivo": "sobre.html"
+      },
+      {
+        "url": "/portfolio",
+        "arquivo": "portfolio.html"
+      },
+      {
+        "url": "/contato",
+        "arquivo": "contato.html"
+      }
+    ]
+  }
