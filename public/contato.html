@@ -1,34 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
         body{
             background: linear-gradient(to bottom right, #3498db, #ffffff);
             background-size: 100% 100%;
             background-repeat: no-repeat;
-            height: 100vh;
             display: flex;
+            height: 100vh;
             flex-direction: column;
+            justify-content: baseline;
+            align-items: center;
+        }
+
+        header{
+            display: flex;
             justify-content: center;
             align-items: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 50px;
         }
 
-        button{
-            position: fixed;
-            top: 0;
-            right: 0;
-            margin: 10px;
-            background-color:black;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 10px;
+        nav{
+            margin-bottom: 25px;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 5px;
+            text-decoration: none;
+            font-size: 14px;
         }
 
+        .contato{
+            text-decoration: underline;
+            text-shadow: 600;
+            font-size: 18px;
+        }
+
+        h1{
+            margin-top: 100px;
+        }
         #logo-ferramentas {
             font-size: 50px;
         }
@@ -53,10 +75,17 @@
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a class="sobre" href="/sobre">SOBRE</a>
+            <a class="portfolio" href="/portfolio">PORTFÓLIO</a>
+            <a class="contato" href="/contato">CONTATO</a>
+        </nav>
+    </header>
     <h1>Contato</h1>
     <ion-icon id='logo-ferramentas' name="construct-outline"></ion-icon>
     <p>Em Desenvolvimento...</p>
-    <button id="voltar">Voltar</button>
+    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

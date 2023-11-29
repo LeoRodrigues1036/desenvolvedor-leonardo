@@ -18,77 +18,95 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: baseline;
             align-items: center;
             width: 100%;
-            background: linear-gradient(to bottom right, #ffffff, #3498db);
+            background: linear-gradient(to bottom right, #3498db, #ffffff);
             background-size: 100% 100%;
             background-repeat: no-repeat;
-        }
+        }    
 
         header {
 
-            width: 350px;
+            width: 90%;
             margin: 10px 0px;
             margin-top: 50px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            
+        }
+
+        nav{
+            margin-bottom: 25px;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        .sobre{
+            text-decoration: underline;
+            text-shadow: 600;
+            font-size: 18px;
         }
 
         header img {
-            width: 100px;
-            border-radius: 100%;
-            margin: 15px;
+            width: 130px;
+            height: 200px;
+            border-radius: 10px;
         }
 
         main {
 
-            width: 350px;
+            width: 90%;
             margin: 10px 0px;
+            display: flex;
+            flex-direction: column;
         }
-        button{
+
+        button {
             position: fixed;
             top: 0;
             right: 0;
             margin: 10px;
-            background-color:black;
+            background-color: black;
             color: white;
             border: none;
-            padding: 5px;
+            padding: 10px;
             border-radius: 10px;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
         }
 
         #logo-html5 {
-           
-            font-size: 55px;
+            font-size: 75px;
             color: #EC572D;
-
         }
 
         #logo-css3 {
-
-            font-size: 45px;
-            margin-bottom: -30px;
-            color: #32ACE0;
+            font-size: 75px;
+            color: #34b1e7;
         }
 
         #logo-javascript {
-
-            font-size: 35px;
-            color: #D6BC3D;
+            font-size: 75px;
+            color: #eed244;
         }
 
         #logo-react {
-
-            font-size: 25px;
+            font-size: 75px;
             color: #68DBFB;
         }
 
         #logo-wordpress {
-
-            font-size: 20px;
-            margin: -20px;
+            font-size: 75px;
             color: #2A799D;
         }
 
@@ -138,7 +156,7 @@
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 18px;
             margin-bottom: 10px;
 
         }
@@ -153,144 +171,57 @@
         p {
             font-size: 14px;
             padding-left: 20px;
-            text-align: left;
+            text-align: justify;
             font-weight: 600;
         }
 
-        a {
-            text-decoration: none;
-            color: royalblue;
-            font-weight: 900;
-        }
-
-        footer{
+        footer {
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: end;
-            align-items:center;
+            align-items: center;
             margin-bottom: 10px;
-
         }
 
         footer p {
-            color: #ffffff;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 10px;
             font-weight: normal;
+            color: rgb(92, 92, 92);
+            font-size: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
-        @media only screen and (min-width: 540px) {
-            /* Estilos específicos para tablet */
-            body {
-                height: auto;
-            }
+        .flex{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 10px;
 
-            header {
-                width: 80%;
-            }
-
-            main {
-                width: 80%;
-            }
-
-            header img {
-                width: 200px;
-            }
-
-            #logo-html5 {
-
-                font-size: 75px;
-                margin-top: -60px;
-
-            }
-
-            #logo-css3 {
-
-                font-size: 65px;
-                margin-bottom: -100px;
-
-            }
-
-            #logo-javascript {
-
-                font-size: 55px;
-                margin-top: -100px;
-            }
-
-            #logo-react {
-                margin-bottom: -50px;
-                font-size: 45px;
-            }
-
-            #logo-wordpress {
-                margin-left: 50px;
-                font-size: 40px;
-            }
         }
 
-        @media only screen and (min-width: 950px) {
-
-            /* Estilos específicos para desktop */
-
-            body {
-                height: 100vh;
-            }
-
-            header {
-               
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
-            }
-
-            main {
-                margin-top: 40px;
-                
-                width: 90%;
-                display: flex;
-                flex-direction: row;
-            }
-            footer{
-                margin-top: 130px;
-            }
-
-            header img {
-                width: 300px;
-            }
-
-            #logo-html5 {
-
-                font-size: 100px;
-                margin-top: -60px;
-                padding: 20px;
-
-            }
-
-            #logo-css3 {
-
-                font-size: 65px;
-                margin-bottom: -100px;
-
-            }
-
-            #logo-javascript {
-
-                font-size: 75px;
-                margin-top: -100px;
-            }
-
-            #logo-react {
-                margin-bottom: -50px;
-                font-size: 65px;
-                padding: 15px;
-            }
-
-            #logo-wordpress {
-                margin-left: 85px;
-                font-size: 80px;
-            }
+        .icon{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            border-radius: 10px;
+            background-color: aliceblue;
+            padding: 10px;
         }
+
+        main a {
+            text-decoration: none;
+        }
+
+        @media only screen and (min-width: 600px){
+            
+            main{
+                width: 530px;
+            }
+            
+        }
+
     </style>
 </head>
 
@@ -299,15 +230,21 @@
 
 
     <header>
-        <div class="icon">
-            <ion-icon id="logo-html5" name="logo-html5"></ion-icon>
-            <ion-icon id="logo-css3" name="logo-css3"></ion-icon>
-            <ion-icon id="logo-javascript" name="logo-javascript"></ion-icon>
-            <ion-icon id="logo-react" name="logo-react"></ion-icon>
-            <ion-icon id="logo-wordpress" name="logo-wordpress"></ion-icon>
+        <nav>
+            <a class="sobre" href="/sobre">SOBRE</a>
+            <a class="portfolio" href="/portfolio">PORTFÓLIO</a>
+            <a class="contato" href="/contato">CONTATO</a>
+        </nav>
 
+        <div class="flex">
+            <div class="icon">
+                <ion-icon id="logo-html5" name="logo-html5"></ion-icon>
+                <ion-icon id="logo-css3" name="logo-css3"></ion-icon>
+                <ion-icon id="logo-javascript" name="logo-javascript"></ion-icon>
+                <ion-icon id="logo-react" name="logo-react"></ion-icon>
+                <ion-icon id="logo-wordpress" name="logo-wordpress"></ion-icon>
+            </div>
         </div>
-        <img src="img/14624805_582200288631679_2632592348588015616_n.jpg" alt="">
     </header>
 
     <main>
@@ -315,7 +252,7 @@
         <div class="box">
             <h1>Quem Sou</h1>
             <p>Olá! Meu nome é Leonardo, tenho 27 anos e sou apaixonado pelo mudo da programação. Atualmente,
-                estou cursando Licenciatura em Computação no IFSertaoPE, onde tenho a oportunidade de aprimorar meus
+                estou cursando Licenciatura em Computação no <a  target="_blank" href="https://www.ifsertao-pe.edu.br/">IFSertaoPE</a>, onde tenho a oportunidade de aprimorar meus
                 conhecimentos e explorar novas perspectivas na área da tecnologia.</p>
         </div>
         <div class="box">
@@ -327,12 +264,12 @@
         <div class="box">
             <h2>Experiência</h2>
             <p>Ao longo da minha jornada, tive a oportunidade de trabalhar em diversos projetos desafiadores, nos quais
-                pude aplicar meus conhecimentos em linguagens como HTML, CSS, JavaScript, e frameworks como React e
+                pude aplicar meus conhecimentos em linguagens como HTML, CSS, JavaScript, e bibliotecas como React e
                 Node.js. Minha abordagem é focada na criação de experiências digitais intuitivas e atraentes.</p>
         </div>
         <div class="box">
             <h2>Educação</h2>
-            <p>Atualmente, estou cursando Computação no <a href="https://www.ifsertao-pe.edu.br/">IFSertaoPE</a>, onde
+            <p>Atualmente, estou cursando Computação no <a  target="_blank" href="https://www.ifsertao-pe.edu.br/">IFSertaoPE</a>, onde
                 tenho acesso a
                 uma sólida base acadêmica que complementa minha experiência prática no desenvolvimento web.</p>
         </div>
@@ -351,16 +288,14 @@
         <p>Todos os direitos reservados - 2023</p>
     </footer>
 
-    <button id="voltar">Voltar</button>
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script>
         // Adiciona um evento de clique ao botão
-        document.getElementById('voltar').addEventListener('click', function() {
-          // Adicione aqui o código que você deseja executar quando o botão for clicado
-          window.location.href = "/"
+        document.getElementById('voltar').addEventListener('click', function () {
+            // Adicione aqui o código que você deseja executar quando o botão for clicado
+            window.location.href = "/"
         });
     </script>
 
