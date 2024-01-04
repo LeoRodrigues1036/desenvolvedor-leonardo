@@ -7,15 +7,15 @@
     <title>Sobre - LEONARDO RODRIGUES</title>
     <link rel="shortcut icon" href="img/icons8-dev-32.png" type="image/x-icon">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    
+        @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
 
         * {
             margin: 0;
             padding: 0;
-            font-family: 'Montserrat', sans-serif;
-
+            font-family: 'Mulish', sans-serif;
         }
-
         body {
             display: flex;
             flex-direction: column;
@@ -31,7 +31,7 @@
 
             width: 90%;
             margin: 10px 0px;
-            margin-top: 50px;
+            margin-top: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -41,6 +41,7 @@
 
         nav{
             margin-bottom: 25px;
+            margin-top: 20px;
         }
         nav a {
             color: #ffffff;
@@ -49,9 +50,9 @@
         }
 
         .sobre{
-            text-decoration: underline;
-            text-shadow: 600;
-            font-size: 18px;
+            
+            text-shadow: 800;
+            font-size: 20px;
         }
 
         header img {
@@ -66,24 +67,6 @@
             margin: 10px 0px;
             display: flex;
             flex-direction: column;
-        }
-
-        button {
-            position: fixed;
-            top: 0;
-            right: 0;
-            margin: 10px;
-            background-color: black;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 10px;
-            font-weight: 600;
-        }
-
-        button:hover {
-            background-color: white;
-            color: black;
         }
 
         #logo-html5 {
@@ -125,27 +108,27 @@
 
         #logo-html5 {
 
-            animation: floating 5s infinite;
+            animation: floating 8s infinite;
         }
 
         #logo-css3 {
 
-            animation: floating 8s infinite;
+            animation: floating 11s infinite;
         }
 
         #logo-javascript {
 
-            animation: floating 11s infinite;
+            animation: floating 8s infinite;
         }
 
         #logo-react {
 
-            animation: floating 13s infinite;
+            animation: floating 11s infinite;
         }
 
         #logo-wordpress {
 
-            animation: floating 15s infinite;
+            animation: floating 8s infinite;
         }
 
         .box {
@@ -157,23 +140,29 @@
         }
 
         h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 18px;
-            margin-bottom: 10px;
-
+            text-align: center;
+            padding: 20px;
         }
 
         h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 18px;
             font-weight: 600;
-            margin-bottom: 10px;
-
+            text-align: center;
+            padding: 20px;
         }
 
         p {
-            font-size: 14px;
-            padding-left: 20px;
+            font-size: 16px;
             text-align: justify;
-            font-weight: 600;
+            font-weight: 500;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
         footer {
@@ -211,8 +200,9 @@
             padding: 10px;
         }
 
-        main a {
+        header a {
             text-decoration: none;
+            text-shadow: 0px 0px 2px black;
         }
 
         @media only screen and (min-width: 600px){
@@ -220,7 +210,13 @@
             main{
                 width: 530px;
             }
+            .flex{
+                width: 530px;
+            }
             
+        }
+        ion-icon{
+            margin-left: 5px;
         }
 
     </style>
@@ -231,11 +227,6 @@
 
 
     <header>
-        <nav>
-            <a class="sobre" href="/sobre">SOBRE</a>
-            <a class="portfolio" href="/portfolio">PORTFÓLIO</a>
-            <a class="contato" href="/contato">CONTATO</a>
-        </nav>
 
         <div class="flex">
             <div class="icon">
@@ -246,36 +237,43 @@
                 <ion-icon id="logo-wordpress" name="logo-wordpress"></ion-icon>
             </div>
         </div>
+        
+        <nav>
+            <a class="sobre" href="/sobre">SOBRE</a>
+            <a class="portfolio" href="/portfolio">PORTFÓLIO</a>
+            <a class="contato" href="/contato">CONTATO</a>
+        </nav>
+
     </header>
 
     <main>
 
         <div class="box">
-            <h1>Quem Sou</h1>
+            <h1>Quem Sou <ion-icon name="person-circle-outline"></ion-icon></h1>
             <p>Olá! Meu nome é Leonardo, tenho 27 anos e sou apaixonado pelo mudo da programação. Atualmente,
                 estou cursando Licenciatura em Computação no <a  target="_blank" href="https://www.ifsertao-pe.edu.br/">IFSertaoPE</a>, onde tenho a oportunidade de aprimorar meus
                 conhecimentos e explorar novas perspectivas na área da tecnologia.</p>
         </div>
         <div class="box">
-            <h2>Sobre Mim</h2>
+            <h2>Sobre Mim <ion-icon name="person-outline"></ion-icon></h2>
             <p>Sou um desenvolvedor entusiasta, sempre em busca de desafios que me permitam aprender e crescer
                 profissionalmente. Com uma base sólida em programção, estou constantemente aprimorando minhas
                 habilidades para oferecer soluções inovadoras e eficientes.</p>
         </div>
         <div class="box">
-            <h2>Experiência</h2>
+            <h2>Experiência <ion-icon name="laptop-outline"></ion-icon></h2>
             <p>Ao longo da minha jornada, tive a oportunidade de trabalhar em diversos projetos desafiadores, nos quais
                 pude aplicar meus conhecimentos em linguagens como HTML, CSS, JavaScript, e bibliotecas como React e
                 Node.js. Minha abordagem é focada na criação de experiências digitais intuitivas e atraentes.</p>
         </div>
         <div class="box">
-            <h2>Educação</h2>
+            <h2>Educação <ion-icon name="school-outline"></ion-icon></h2>
             <p>Atualmente, estou cursando Computação no <a  target="_blank" href="https://www.ifsertao-pe.edu.br/">IFSertaoPE</a>, onde
                 tenho acesso a
                 uma sólida base acadêmica que complementa minha experiência prática no desenvolvimento web.</p>
         </div>
         <div class="box">
-            <h2>Objetivo</h2>
+            <h2>Objetivo <ion-icon name="rocket-outline"></ion-icon></h2>
             <p>Busco oportunidades que me permitam continuar explorando e aprimorando minhas habilidades como
                 desenvolvedor FullStack. Estou comprometido em contribuir para projetos inovadores e desafiadores,
                 enquanto

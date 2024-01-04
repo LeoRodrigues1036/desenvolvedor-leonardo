@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="shortcut icon" href="img/icons8-dev-32.png" type="image/x-icon">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
-        *{
+        * {
             margin: 0;
             padding: 0;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Mulish', sans-serif;
         }
 
-        body{
+        body {
             background: linear-gradient(to bottom right, #3498db, #ffffff);
             background-size: 100% 100%;
             background-repeat: no-repeat;
@@ -26,30 +26,116 @@
             align-items: center;
         }
 
-        header{
+        header {
+
+            width: 90%;
+            margin: 10px 0px;
+            margin-top: 20px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: 50px;
+
         }
 
-        nav{
+        nav {
             margin-bottom: 25px;
+            margin-top: 20px;
         }
+
         nav a {
             color: #ffffff;
             margin: 5px;
-            text-decoration: none;
             font-size: 14px;
         }
 
-        .contato{
-            text-decoration: underline;
-            text-shadow: 600;
-            font-size: 18px;
+        #logo-html5 {
+            font-size: 75px;
+            color: #EC572D;
         }
-        
-        main{
+
+        #logo-css3 {
+            font-size: 75px;
+            color: #34b1e7;
+        }
+
+        #logo-javascript {
+            font-size: 75px;
+            color: #eed244;
+        }
+
+        #logo-react {
+            font-size: 75px;
+            color: #68DBFB;
+        }
+
+        #logo-wordpress {
+            font-size: 75px;
+            color: #2A799D;
+        }
+
+        @keyframes floating {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        #logo-html5 {
+
+            animation: floating 8s infinite;
+        }
+
+        #logo-css3 {
+
+            animation: floating 11s infinite;
+        }
+
+        #logo-javascript {
+
+            animation: floating 8s infinite;
+        }
+
+        #logo-react {
+
+            animation: floating 11s infinite;
+        }
+
+        #logo-wordpress {
+
+            animation: floating 8s infinite;
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            border-radius: 10px;
+            background-color: aliceblue;
+            padding: 10px;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 10px;
+
+        }
+
+        .contato {
+
+            font-size: 20px;
+        }
+
+        main {
             margin-top: 20px;
             width: 90%;
             display: flex;
@@ -67,10 +153,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-weight: 600;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        main a{
+        main a {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -80,7 +167,7 @@
         }
 
         footer {
-            
+
             padding: 10px;
             display: flex;
             flex-direction: column;
@@ -93,21 +180,53 @@
             bottom: 0;
 
         }
-        
+
+        header a {
+            text-decoration: none;
+            text-shadow: 0px 0px 2px black;
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            main {
+                width: 530px;
+            }
+
+            .flex {
+                width: 530px;
+            }
+
+        }
     </style>
 </head>
+
 <body>
     <header>
+
+        <div class="flex">
+            <div class="icon">
+                <ion-icon id="logo-html5" name="logo-html5"></ion-icon>
+                <ion-icon id="logo-css3" name="logo-css3"></ion-icon>
+                <ion-icon id="logo-javascript" name="logo-javascript"></ion-icon>
+                <ion-icon id="logo-react" name="logo-react"></ion-icon>
+                <ion-icon id="logo-wordpress" name="logo-wordpress"></ion-icon>
+            </div>
+        </div>
+
         <nav>
             <a class="sobre" href="/sobre">SOBRE</a>
             <a class="portfolio" href="/portfolio">PORTFÓLIO</a>
             <a class="contato" href="/contato">CONTATO</a>
         </nav>
+
     </header>
     <main>
         <p>Email: leorodrigues@gmail.com <a target="_blank" href=""><ion-icon name="mail-outline"></ion-icon></a></p>
-        <p>Telefone: 87 9 9194-9448 <a target="_blank" href="https://api.whatsapp.com/send?phone=5587991949448"><ion-icon name="logo-whatsapp"></ion-icon></a></p>
-        <p>@le0dev <a target="_blank" href="https://www.instagram.com/le0dev/"><ion-icon name="logo-instagram"></ion-icon></a></p>
+        <p>Telefone: 87 9 9194-9448 <a target="_blank"
+                href="https://api.whatsapp.com/send?phone=5587991949448"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        </p>
+        <p>@le0dev <a target="_blank" href="https://www.instagram.com/le0dev/"><ion-icon
+                    name="logo-instagram"></ion-icon></a></p>
     </main>
 
     <footer>
@@ -119,4 +238,5 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
