@@ -24,7 +24,5 @@ app.get('/contato', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'contato.html'));
 });
 
-app.listen(port, () => {
-  console.log(`O servidor está rodando em http://localhost:${port}`);
-});
+
 
