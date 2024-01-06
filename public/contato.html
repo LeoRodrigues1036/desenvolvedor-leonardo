@@ -6,201 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="shortcut icon" href="img/icons8-dev-32.png" type="image/x-icon">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Mulish', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(to bottom right, #3498db, #ffffff);
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            display: flex;
-            height: 100vh;
-            flex-direction: column;
-            justify-content: baseline;
-            align-items: center;
-        }
-
-        header {
-
-            width: 90%;
-            margin: 10px 0px;
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        nav {
-            margin-bottom: 25px;
-            margin-top: 20px;
-        }
-
-        nav a {
-            color: #ffffff;
-            margin: 5px;
-            font-size: 14px;
-        }
-
-        #logo-html5 {
-            font-size: 75px;
-            color: #EC572D;
-        }
-
-        #logo-css3 {
-            font-size: 75px;
-            color: #34b1e7;
-        }
-
-        #logo-javascript {
-            font-size: 75px;
-            color: #eed244;
-        }
-
-        #logo-react {
-            font-size: 75px;
-            color: #68DBFB;
-        }
-
-        #logo-wordpress {
-            font-size: 75px;
-            color: #2A799D;
-        }
-
-        @keyframes floating {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        #logo-html5 {
-
-            animation: floating 8s infinite;
-        }
-
-        #logo-css3 {
-
-            animation: floating 11s infinite;
-        }
-
-        #logo-javascript {
-
-            animation: floating 8s infinite;
-        }
-
-        #logo-react {
-
-            animation: floating 11s infinite;
-        }
-
-        #logo-wordpress {
-
-            animation: floating 8s infinite;
-        }
-
-        .icon {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            width: 100%;
-            border-radius: 10px;
-            background-color: aliceblue;
-            padding: 10px;
-        }
-
-        .flex {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            padding: 10px;
-
-        }
-
-        .contato {
-
-            font-size: 20px;
-        }
-
-        main {
-            margin-top: 20px;
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: aliceblue;
-            height: 50%;
-            border-radius: 10px;
-        }
-
-        main p {
-            font-size: 16px;
-            margin: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: 500;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        main a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 5px;
-            font-size: 20px;
-            color: black;
-        }
-
-        footer {
-
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            align-items: center;
-            font-size: 10px;
-            color: black;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            position: fixed;
-            bottom: 0;
-
-        }
-
-        header a {
-            text-decoration: none;
-            text-shadow: 0px 0px 2px black;
-        }
-
-        @media only screen and (min-width: 600px) {
-
-            main {
-                width: 530px;
-            }
-
-            .flex {
-                width: 530px;
-            }
-
-        }
-    </style>
+    <link rel="stylesheet" href="css/contato.css">
 </head>
 
 <body>
+
     <header>
 
         <div class="flex">
@@ -220,18 +30,20 @@
         </nav>
 
     </header>
+
     <main>
+
         <p>Email: leorodrigues@gmail.com <a target="_blank" href=""><ion-icon name="mail-outline"></ion-icon></a></p>
-        <p>Telefone: 87 9 9194-9448 <a target="_blank"
-                href="https://api.whatsapp.com/send?phone=5587991949448"><ion-icon name="logo-whatsapp"></ion-icon></a>
-        </p>
-        <p>@le0dev <a target="_blank" href="https://www.instagram.com/le0dev/"><ion-icon
-                    name="logo-instagram"></ion-icon></a></p>
+        <p>Telefone: 87 9 9194-9448 <a target="_blank"href="https://api.whatsapp.com/send?phone=5587991949448"><ion-icon name="logo-whatsapp"></ion-icon></a></p>
+        <p>@le0dev <a target="_blank" href="https://www.instagram.com/le0dev/"><ion-icon name="logo-instagram"></ion-icon></a></p>
+
     </main>
 
     <footer>
+
         <p>Desenvolvido por LEONARDO RODRIGUES</p>
         <p>Todos os direitos reservados - 2023</p>
+        
     </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
